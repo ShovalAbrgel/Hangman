@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="/style.css"/>
+    <script type="module" src="/main.js"></script>
+
+    <title>איש תלוי</title>
+  </head>
+  
+  <body>
+    <div id="container">
+      <h1>איש תלוי</h1>
+      <div style="font-size: 30px;" class="allTheMistakes">ניחושיים שגויים: <span id="mistakes">0</span> מתוך <span id="maxWorngValue"></span></div>
+        <img id="hangmanPic" src="./images/0.png">
+        <p class="guessWord">נחש את תחום הספורט :</p>
+        <p id="TheAnswerWord"></p>
+        <div id="board"></div>
+        <button class="btnReset" onclick="btnRestartGameClicked()">התחל מחדש</button>
+    </div>
+  </body>
+</html>
