@@ -22,6 +22,7 @@ body{
 	height: 800px;
 	margin: auto;
 	text-align: center;
+	font-size: 50px;
 }
 
 .btnReset{
@@ -31,28 +32,34 @@ body{
 	padding: 10px 20px;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 26px;
 	margin: 5px;
 	cursor: pointer;
 	border-radius: 5px;
 	font-weight: bold;
 }
 
+.btnReset:hover{
+	background-color: lightpink;
+}
+
 .allTheMistakes{
 	font-weight: bold;
-	color: thistle;
+	color: white;
+	font-size: 20px;
 }
 
 .guessWord{
 	font-weight: bold;
-	color: thistle;
-	font-size: 20px;
+	color: purple;
+	font-size: 40px;
 	
 }
 
 #TheAnswerWord{
 	font-weight: bold;
-	color: thistle;
+	color: pink;
+	font-size: 30px;
 }
 
 

@@ -2,12 +2,12 @@ import './style.css'
 
 
 const sports = [
-  "tennis",
-  "running",
-  "basketball",
-  "football",
-  "judo",
-  "bowling"
+  "pizza",
+  "hamburger",
+  "noodles",
+  "sushi",
+  "soup",
+  "ice cream"
 ];
 
 let mistakes = 0;
@@ -33,7 +33,7 @@ function getButtons(){
   for(let i=0;i<letters.length;i++){
     const letter = letters[i];
     buttonHTML += `
-      <button id = "${letter}" onClick="handleGuess('${letter}')">
+      <button id = "${letter}" onClick="handleGuess('${letter}')"style="font-size: 20px;" >
         ${letter}
         </button>
     `;
@@ -41,6 +41,7 @@ function getButtons(){
 
   board.innerHTML = buttonHTML;
 }
+
 
 
 window.handleGuess= function(chosenLetter){
@@ -79,18 +80,21 @@ function gussedWord(){
 
 
 board.style.color = "font-weight: bold";
-board.style.color = "thistle";
 
 function whoIsTheWinner(){
   if(answer === TheAnswerWord.textContent){
-    board.innerHTML = 'הצלחת!!!';
+    board.innerHTML = 'You made it!!!';
+    board.style.color = "white";
+    board.style.fontSize = "25px";
   }   
 }
 
 function whoIsTheLoser(){
   if(mistakes === maxWrong){
-    TheAnswerWord.innerHTML = 'התשובה הייתה: ' + answer;
-    board.innerHTML = "לא הצליח לך...";
+    TheAnswerWord.innerHTML = 'The answer was: ' + answer;
+    board.innerHTML = "you did not succeed...";
+    board.style.fontSize = "25px";
+    board.style.color = "red";
   }
 }
 

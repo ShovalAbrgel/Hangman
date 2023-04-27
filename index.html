@@ -9,18 +9,19 @@
     <link rel="stylesheet" href="/style.css"/>
     <script type="module" src="/main.js"></script>
 
-    <title>איש תלוי</title>
+    <title>hangman</title>
   </head>
   
   <body>
     <div id="container">
-      <h1>איש תלוי</h1>
-      <div style="font-size: 30px;" class="allTheMistakes">ניחושיים שגויים: <span id="mistakes">0</span> מתוך <span id="maxWorngValue"></span></div>
+      <h1>hangman</h1>
+      <div style="font-size: 30px;" class="allTheMistakes"> wrong guesses : <span id="mistakes">0</span> of <span id="maxWorngValue"></span></div>
         <img id="hangmanPic" src="./images/0.png">
-        <p class="guessWord">נחש את תחום הספורט :</p>
+        <p class="guessWord">guess the food :</p>
         <p id="TheAnswerWord"></p>
         <div id="board"></div>
-        <button class="btnReset" onclick="btnRestartGameClicked()">התחל מחדש</button>
+        <br/>
+        <button class="btnReset" onclick="btnRestartGameClicked()">start over</button>
     </div>
   </body>
 </html>
