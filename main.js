@@ -1,13 +1,13 @@
 import './style.css'
 
 
-const sports = [
+const foods = [
   "pizza",
   "hamburger",
   "noodles",
   "sushi",
   "soup",
-  "ice cream"
+  "steak"
 ];
 
 let mistakes = 0;
@@ -24,7 +24,7 @@ let TheAnswerWord = document.getElementById("TheAnswerWord");
 
 
 function getRandomWord(){
-   answer = sports[Math.floor(Math.random() * sports.length)];
+   answer = foods[Math.floor(Math.random() * foods.length)];
 }
 
 function getButtons(){
